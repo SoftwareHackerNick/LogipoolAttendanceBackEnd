@@ -40,7 +40,7 @@ public class CourseMasterServiceImpl implements CourseMasterService{
 		CourseMaster existingCourse =courseRepo.findById(id).orElse(null);
 		
 		if(existingCourse!=null) {
-			existingCourse.setId(course.getId());
+//			existingCourse.setId(course.getId());
 			existingCourse.setName(course.getName());
 			existingCourse.setDescription(course.getDescription());
 			existingCourse.setFees(course.getFees());
