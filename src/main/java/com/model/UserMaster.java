@@ -19,7 +19,7 @@ public class UserMaster {
 	private String subject;
 	
 	public UserMaster() {
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	public UserMaster(int id, String fname, String lname, String email, String mobileNo, String address,

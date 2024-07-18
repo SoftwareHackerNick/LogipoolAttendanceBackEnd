@@ -41,15 +41,12 @@ public class BatchMasterServiceImpl implements BatchMasterService{
 		BatchMaster existingBatch =batchMasterRepo.findById(B_id).orElse(null);
 		
 		if(existingBatch!=null) {
-			existingBatch.setCoursemaster(batch.getCoursemaster());
-			existingBatch.setUserMaster(batch.getUserMaster());
-			existingBatch.setB_startDate(batch.getB_endDate());
-			existingBatch.setB_endDate(batch.getB_endDate());
-			existingBatch.setB_studentList(batch.getB_studentList());
-			
-			
-		
-			
+			existingBatch.setBname(batch.getBname());
+			existingBatch.setCourse(batch.getCourse());
+			existingBatch.setSdate(batch.getSdate());
+			existingBatch.setEdate(batch.getEdate());
+			existingBatch.setTrainer(batch.getTrainer());
+
 		}
 		else {
 			System.out.println("Batch Master Record is null");
